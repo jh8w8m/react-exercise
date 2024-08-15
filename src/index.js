@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Route from "./Route";
+import LazyRenderQueue from "./pages/LazyRenderQueue";
 
 const router = createBrowserRouter([
   {
@@ -17,11 +18,13 @@ const router = createBrowserRouter([
     path: "/test",
     element: <App/>,
   },
+  {
+    path: "/lazy-render-queue",
+    element: <LazyRenderQueue/>
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
 );

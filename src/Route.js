@@ -12,10 +12,10 @@ export default function Route() {
         to '/test'
       </NavLink>
       <NavLink
-        to="/test"
+        to="/lazy-render-queue"
         className={"route-item"}
       >
-        to '/test'
+        to '/lazy-render-queue'
       </NavLink>
     </div>
   )
